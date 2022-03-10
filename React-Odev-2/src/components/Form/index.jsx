@@ -11,7 +11,7 @@ import {
   ListItem,
   Text,
 } from "@chakra-ui/react";
-import { AddIcon } from "@chakra-ui/icons";
+import { AddIcon, DeleteIcon } from "@chakra-ui/icons";
 
 function TasksInput({ tasks, setTasks, newTask, setNewTask }) {
   const onChangeInput = (e) => {
@@ -31,28 +31,28 @@ function TasksInput({ tasks, setTasks, newTask, setNewTask }) {
       <form>
       <Center>
         <Box
-          bg="yellow.400"
+          bg="#644E6E"
           display="flex"
           justifyContent="center"
           alignItems={"center"}
           mt={200}
-          width={"fit-content"}
+          width={"400px"}
           p={30}
           flexDirection={"column"}
           borderRadius={"25px"}
         >
-          <Heading color={"orange.900"}>Yapılacaklar Listesi</Heading>
+          <Heading color={"#FFFFFF"}>Yapılacaklar Listesi</Heading>
           <br />
           <InputGroup>
             <Input
               value={newTask}
               onChange={onChangeInput}
-              focusBorderColor={"orange.400"}
-              textColor={"blue.800"}
+              focusBorderColor={"#E84662"}
+              textColor={"#E84662"}
             />
             <InputRightElement>
               <Button onClick={onSubmit}>
-                <AddIcon color={"orange.400"} />
+                <AddIcon color={"#E84662"} />
               </Button>
             </InputRightElement>
           </InputGroup>
