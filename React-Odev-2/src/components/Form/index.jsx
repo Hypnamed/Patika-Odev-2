@@ -9,10 +9,9 @@ import {
   InputRightElement,
   UnorderedList,
   ListItem,
+  Text,
 } from "@chakra-ui/react";
 import { AddIcon } from "@chakra-ui/icons";
-import "../styles.css";
-const initialFormValues = [];
 
 function TasksInput({ tasks, setTasks, newTask, setNewTask }) {
   const onChangeInput = (e) => {
@@ -57,12 +56,12 @@ function TasksInput({ tasks, setTasks, newTask, setNewTask }) {
               </Button>
             </InputRightElement>
           </InputGroup>
-          <UnorderedList>
-            {tasks.map((task, i) => {
+          <UnorderedList className="list">
+            {tasks.map((task, i) => (
               <ListItem key={i}>
-                {task}
+                <Text>{task}</Text>
               </ListItem>
-            })}
+            ))}
           </UnorderedList>
         </Box>
       </Center>

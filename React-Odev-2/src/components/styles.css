@@ -1,3 +1,17 @@
 body {
     background-color: burlywood;
 }
+
+.list {
+    margin: 15px 0;
+}
+
+.list > li {
+    background-color:antiquewhite;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
